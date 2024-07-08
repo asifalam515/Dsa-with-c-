@@ -1,0 +1,21 @@
+#include<bits/stdc++.h>
+
+using namespace std;
+int main()
+{
+  int *arr = new int[5];
+  int *newArr = new int [7];
+//   input to the array
+for(int i=0;i<5;i++){
+    cin>>arr[i];
+}
+for(int i =0;i<7;i++){
+    newArr [i] = arr[i];
+}
+arr[5]=23;
+arr[6]=34;
+for( int i = 0;i<7;i++){
+    cout<<newArr[i]<<endl;
+}
+    return 0;
+}
